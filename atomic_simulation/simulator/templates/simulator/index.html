@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Model Simulation</title>
+    <link rel="stylesheet" href="{% static 'simulator/styles.css' %}">
+</head>
+<body>
+    <h1>Interactive Atomic Model</h1>
+
+    <div class="container">
+        <!-- Left Side: Controls -->
+        <div class="controls">
+            <h2>Atomic Controls</h2>
+            <h3>Protons: <span id="proton-count">7</span>
+                <button onclick="updateProtons(-1)">-</button>
+                <button onclick="updateProtons(1)">+</button>
+            </h3>
+            <h3>Neutrons: <span id="neutron-count">9</span>
+                <button onclick="updateNeutrons(-1)">-</button>
+                <button onclick="updateNeutrons(1)">+</button>
+            </h3>
+            <h3>Electrons: <span id="electron-count">7</span>
+                <button onclick="updateElectrons(-1)">-</button>
+                <button onclick="updateElectrons(1)">+</button>
+            </h3>
+        </div>
+
+        <!-- Right Side: Atomic Visualization -->
+        <div class="visualization">
+            <h2 id="atom-title">Atomic Model</h2>
+            <h3>Element: <span id="element-name">Unstable Atom</span></h3> <!-- Fixed Position -->
+            <canvas id="atomCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="{% static 'simulator/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #90EE90;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Title */
+h1 {
+    color:blue;
+    font-size: 32px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 30px; /* Adds spacing between controls and visualization */
+}
+
+/* Controls Box */
+.controls {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Atomic Model Container */
+.visualization {
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+/* Element Name Styling */
+#element-name {
+    color:#FF0000;
+    display:inline;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between text and canvas */
+}
+
+/* Canvas Container */
+canvas {
+    border: 1px solid black;
+    background:#800080;
+    display: block;
+    margin: 0 auto;
+    width: 400px !important;  /* Forces fixed size */
+    height: 400px !important;
+    max-width: 100%;
+}
