@@ -15,6 +15,7 @@ The simulation is built using HTML, JavaScript, and Django as the backend.
 1. Clone the Repository
    
       git clone https://github.com/your-username/atomic-simulation.git
+   
       cd atomic-simulation
    
 3. Install Dependencies:Make sure you have Python 3.x and Django installed.
@@ -53,10 +54,9 @@ The simulation is built using HTML, JavaScript, and Django as the backend.
     |-- README.md              # Project documentation
 
 ## Backend API Endpoints
-1. Endpoint	Method	Description:
-    /api/element/<protons>/<neutrons>/<electrons>/
+1. Endpoint:/api/element/<protons>/<neutrons>/<electrons>/
 2. Method :	GET
-3. Description:	Returns element data based on atomic numbers
+3. Description: Returns element data based on atomic numbers
 
 ## Dependencies
     Backend: Django, Mendeleev
