@@ -13,17 +13,19 @@ The simulation is built using HTML, JavaScript, and Django as the backend.
 
 ## Installation
 1. Clone the Repository
-   git clone https://github.com/your-username/atomic-simulation.git
-   cd atomic-simulation
-2. Install Dependencies:Make sure you have Python 3.x and Django installed.
-   pip install -r requirements.txt
+   
+      git clone https://github.com/your-username/atomic-simulation.git
+      cd atomic-simulation
+   
+3. Install Dependencies:Make sure you have Python 3.x and Django installed.
+      pip install -r requirements.txt
    
    Create requirements.txt file and add the following libraries to your requirements.txt file:
        Django
        mendeleev
        Django
        numpy
-3. Run the Django Server
+4. Run the Django Server
      python manage.py runserver
   Open the frontend in a browser:
       http://127.0.0.1:8000/
